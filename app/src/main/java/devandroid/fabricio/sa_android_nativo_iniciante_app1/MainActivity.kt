@@ -1,5 +1,6 @@
 package devandroid.fabricio.sa_android_nativo_iniciante_app1
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -22,7 +23,9 @@ class MainActivity : AppCompatActivity() {
 
         cvCreatura.setOnClickListener {
             Toast.makeText(this, "CardView clicado!", Toast.LENGTH_SHORT).show()
-        }
 
+        val newActivityIntent = Intent(this, CreatureViewActivity::class.java)
+            startActivity(newActivityIntent)
+        }
     }
 }
