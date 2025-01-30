@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         cvCreatura.setOnClickListener {
             Toast.makeText(this, "CardView clicado!", Toast.LENGTH_SHORT).show()
-
+            // Navegar para a nova Activity
         val newActivityIntent = Intent(this, CreatureViewActivity::class.java)
             startActivity(newActivityIntent)
         }
